@@ -1,0 +1,63 @@
+.input-group {
+    width: 300px !important;
+    align-items: center;
+}
+
+.input-radios {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os elementos */
+    margin-bottom: 20px; /* Margem inferior */
+    font-family: Arial, sans-serif; /* Fonte da div */
+}
+
+input[type="radio"] {
+    display: none; /* Oculta o botão de rádio padrão */
+}
+
+label {
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: 2px solid #007bff; /* Borda azul */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #f8f9fa; /* Fundo claro */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+input[type="radio"]:checked + label {
+    background-color: #007bff; /* Fundo azul quando selecionado */
+    color: white; /* Texto branco quando selecionado */
+    border-color: #0056b3; /* Borda azul escura quando selecionado */
+}
+
+/* Adiciona um efeito ao passar o mouse */
+label:hover {
+    background-color: #e2e6ea; /* Fundo claro ao passar o mouse */
+}
+
+.input-preco {
+    display: flex;
+    margin-bottom: 20px; /* Espaço inferior */
+}
+
+input[type="number"] {
+    width: 300px; /* Largura do input */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #007bff; /* Borda azul */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Efeito de foco no input */
+input[type="number"]:focus {
+    border-color: #0056b3; /* Borda azul escura ao focar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra ao redor */
+    outline: none; /* Remove a outline padrão */
+}
+
+/* Adiciona um efeito ao passar o mouse */
+input[type="number"]:hover {
+    border-color: #0056b3; /* Borda azul escura ao passar o mouse */
+}
